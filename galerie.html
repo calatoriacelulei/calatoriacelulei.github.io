@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/galerie.css">
+    <script src="./js/header.js"></script>
+    <script src="./js/slide.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <footer>
+
+        <div class="header" id="header">
+            <div>
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+                <p class="liceul">Liceul Teoretic <br> Petre Ștefănucă</p>
+            </div>
+
+            <div id="fullmenu">
+
+                <div>
+                    <a href="index.html">Acasă</a>
+                    <a href="aboutus.html">Despre Noi</a>
+                    <a href="transdisciplinaritate.html">Transdisciplinaritate</a>
+                    <a href="transparenta.html">Transparență</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="contacts.html">Contacte</a>
+                </div>
+            </div>
+
+            <div onclick="openMenu()" class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
+        </div>
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 13</div>
+                <img src="./image/g5.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 13</div>
+                <img src="./image/g2.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 13</div>
+                <img src="./image/g3.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 13</div>
+                <img src="./image/g4.jpg" style="width:100%">
+
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 13</div>
+                <img src="./image/g6.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 13</div>
+                <img src="./image/g7.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 13</div>
+                <img src="./image/g1.jpg" style="width:100%">
+
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 13</div>
+                <img src="./image/g8.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 13</div>
+                <img src="./image/g9.jpg" style="width:100%">
+
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 13</div>
+                <img src="./image/g10.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">11 / 13</div>
+                <img src="./image/g11.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">12 / 13</div>
+                <img src="./image/g13.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">13 / 13</div>
+                <img src="./image/g12.jpg" style="width:100%">
+
+            </div>
+
+
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+        </div>
+
+
+       
+
+
+
+
+
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="r1">
+                <h6>pagini</h6>
+                <ul>
+                    <li><a href="#">Acasa</a></li>
+                    <li><a href="#">Despre Noi</a></li>
+                    <li><a href="#">Transdisciplinaritate</a></li>
+                    <li><a href="#">Transparență</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Contacte</a></li>
+                </ul>
+            </div>
+
+            <div class="r2">
+                <h6>contacteaza-ne</h6>
+                <ul class="cont">
+                    <li> <a href="tel:026822437" target="_blank">026822437</a></li>
+                    <li> <a href="mailto:ipltpetrestefanuca@gmail.com" target="_blank">ipltpetrestefanuca@gmail.com</a>
+                    </li>
+                    <li><a href="ltpetrestefanuca.md">ltpetrestefanuca.md</a></li>
+                    <li>Strada Basarabia 2, Ialoveni</li>
+                    <li class="icon"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
