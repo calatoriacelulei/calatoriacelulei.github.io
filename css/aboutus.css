@@ -160,6 +160,11 @@ body {
   margin: auto;
 }
 @media only screen and (max-width: 1024px) {
+  .part1 div > .text {
+    padding: 2vh 5vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .part1 div {
     display: initial;
   }
@@ -262,10 +267,11 @@ body {
   .content-card > .card > img {
     display: block;
     justify-content: center;
-    margin: auto;
-    width: 150px;
-    height: 150px;
+    margin: 0 auto;
+    width: 30%;
+    height: 40%;
     margin-top: 4vh;
+    padding: 0;
   }
 }
 
