@@ -26,3 +26,9 @@ iframe {
         margin: 5vh 4vh;
     }
 }
+
+body{
+    overflow-x: hidden;
+    touch-action: pan-y;
+}
+
