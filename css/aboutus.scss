@@ -1,0 +1,153 @@
+@import "./colors.scss";
+@import "./reset.scss";
+
+body {
+  overflow-y: scroll;
+}
+
+.part1 {
+  margin: 5vh auto;
+
+  @media only screen and (max-width: 1024px) {
+    position: relative;
+  }
+
+  div {
+    display: inline-flex;
+    > .text {
+      max-width: 450px;
+      justify-content: center;
+      margin: auto;
+    }
+    @media only screen and (max-width: 1024px) {
+      display: initial;
+    }
+  }
+
+  img {
+    width: 65vh;
+    border-radius: 1.5vh;
+    margin: auto;
+
+    @media only screen and (max-width: 1024px) {
+      width: 85%;
+      height: 85%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  p {
+    margin-top: 2vh;
+    text-align: justify;
+    margin-left: 3vh;
+    line-height: normal;
+    max-width: 950px;
+    justify-content: center;
+    display: flex;
+    margin: 2vh auto;
+    line-height: 25px;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 2vh;
+      padding: 2vh;
+      margin: 2vh 3vh;
+    }
+  }
+}
+.text2>.h1{
+  color:#0086A5;
+}
+.groupfoto > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  @media only screen and (max-width: 1024px) {
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
+  }
+}
+
+.content-card {
+  margin: 5vh 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 1024px) {
+    .content-card {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+}
+
+.content-card > .card {
+  width: 430px;
+  height: auto;
+  border-radius: 30px;
+  background: #e0e0e091;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(106, 163, 209, 0.26);
+  margin: 3vh 15px;
+  @media only screen and (max-width: 1024px) {
+    display: initial;
+    width: 330px;
+    height: auto;
+  }
+}
+
+.content-card > .card > img {
+  border-radius: 50%;
+  align-items: left;
+  width: 50%;
+  height: 70%;
+  margin: 0 10px;
+  @media only screen and (max-width: 1024px) {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 4vh;
+  }
+}
+
+.content-card > .card > p {
+  align-items: right;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 2vh;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 57px;
+  margin: 20px 0;
+  color: rgb(106, 162, 209);
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.text > p {
+  text-align: center;
+  font-size: 25px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+}

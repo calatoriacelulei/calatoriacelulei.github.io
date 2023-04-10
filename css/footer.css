@@ -1,0 +1,174 @@
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  ul {
+    justify-content: center;
+  }
+}
+
+ul li {
+  display: block;
+  font-size: 18px;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 1024px) {
+  ul li {
+    justify-content: center;
+  }
+}
+
+ul a {
+  color: #737373;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  ul a {
+    justify-content: center;
+  }
+}
+
+ul a:active,
+ul a:focus,
+ul a:hover {
+  color: black;
+}
+
+.cont {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 2vh;
+}
+
+@media (max-width: 767px) {
+  footer .cont {
+    text-align: center;
+  }
+}
+.icon a.facebook {
+  border-radius: 50%;
+  background-color: rgb(106, 162, 209);
+  margin-top: 1vh;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #efefef;
+}
+@media only screen and (max-width: 1024px) {
+  footer {
+    padding: 0;
+    display: flex;
+  }
+}
+footer .container {
+  display: flex;
+  margin: 1vh 0;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container {
+    margin: 4vh auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  footer .container {
+    margin: 4vh auto;
+    display: flex;
+  }
+}
+footer .container h6 {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container h6 {
+    font-size: 20px;
+    margin: 5vh 2vh;
+    text-align: center;
+  }
+}
+footer .container .logo {
+  width: auto;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container .logo {
+    justify-content: center;
+    margin: auto;
+  }
+}
+footer .container .logo img {
+  width: 200px;
+  margin-left: 5vh;
+  margin-right: 15vh;
+  margin-top: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container .logo img {
+    width: 200px;
+    justify-content: center;
+    margin: auto;
+  }
+}
+footer .container .r1 {
+  margin: 3vh 10vh;
+  width: auto;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container .r1 {
+    text-align: center;
+  }
+}
+footer .container .r1 li {
+  text-align: center;
+}
+footer .container .r2 {
+  margin: 3vh 10vh;
+  width: auto;
+  justify-content: center;
+}
+footer .container .r2 li {
+  text-align: center;
+}
+footer .container .r2 .cont {
+  margin-top: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container .r2 .cont {
+    text-align: center;
+  }
+}
+footer .container .r2 .icon {
+  align-items: center;
+}
+footer .container .r2 .icon a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  transition: all 0.2s linear;
+  justify-content: center;
+}
+footer .container .r2 .icon a:hover {
+  color: #fff;
+  background-color: rgb(106, 162, 209);
+}/*# sourceMappingURL=footer.css.map */

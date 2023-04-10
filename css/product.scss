@@ -1,0 +1,160 @@
+@import "./colors.scss";
+@import "./reset.scss";
+
+body {
+  overflow-y: scroll;
+}
+
+.continut {
+  flex: 1;
+}
+
+.produs {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 5vh;
+  align-items: flex-start;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 0 10vw;
+
+  @media only screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+
+  > img {
+    object-fit: contain;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+  }
+
+  > div {
+    &:first-of-type {
+      display: flex;
+      flex-direction: column;
+
+      > .text {
+        > p {
+          font-size: 4vh;
+          font-weight: 600;
+          padding: 1vh 0vh;
+        }
+      }
+      > .descriere {
+        font-size: 15px;
+        max-width: 400px;
+        line-height: 1.1;
+      }
+
+      > .pretul {
+        margin-top: 4vh;
+
+        > .pret {
+          font-size: 4vh;
+        }
+
+        .kg {
+          font-size: 2vh;
+        }
+      }
+
+      > .block_count {
+        display: flex;
+        align-items: center;
+
+        > div {
+          padding: 2vh 2vh;
+          text-align: center;
+          font-size: 25px;
+          font-weight: 600;
+          @media only screen and (max-width: 1024px) {
+            font-size: 22.5px;
+            font-weight: 700;
+          }
+        }
+
+        > .input_minus {
+          background-color: white;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          justify-content: center;
+          display: flex;
+          text-align: center;
+          margin: 2vh; 
+          line-height: 20px; 
+         
+        }
+        .number {
+          margin:0 -10px
+        }
+
+        > .input_plus {
+          background-color: white;
+          border: none;
+          border-radius: 50%;
+          box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+          margin: 2vh;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          line-height: 20px;
+        }
+      }
+
+      > .add-cart {
+        position: relative;
+        background: black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        border-style: none;
+        cursor: pointer;
+        margin: 0vh 2vh;
+        margin-left: 0;
+        float: left;
+        width: 100%;
+        max-width: 250px;
+
+        > .bt {
+          position: relative;
+          left: -3vh;
+          width: 4vh;
+          height: 4vh;
+        }
+
+        > .bt_p {
+          text-align: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          font-size: 2vh;
+          font-weight: 600;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  padding: 20px;
+  @media only screen and (max-width: 1024px) {
+    position: relative;
+    padding: 0;
+  }
+}

@@ -1,0 +1,83 @@
+.text {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 3vh;
+  color: rgb(106, 162, 209);
+}
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+}
+
+.container {
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.box {
+  width: 47vh;
+  height: 45vh;
+  margin: 2vh 3vh;
+  border-radius: 10px;
+  border: 0.5px solid rgba(194, 194, 194, 0.536);
+  padding-bottom: 2vh;
+  overflow: hidden;
+  transition: transform 0.5s ease 0s;
+}
+@media only screen and (max-width: 1024px) {
+  .box {
+    width: 70vw;
+    justify-content: center;
+    margin: 2vh auto;
+    height: 42.5vh;
+  }
+}
+.box > img {
+  width: 47vh;
+  margin: auto;
+  display: block;
+  margin-bottom: 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  .box > img {
+    width: 70vw;
+  }
+}
+.box > a {
+  padding: 1vh 2vh;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.box > p {
+  padding: 0.5vh 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.bt {
+  width: 225px;
+  height: 40px;
+  border: none;
+  justify-content: center;
+  background-color: #489fb5;
+  color: white;
+  border-radius: 17.5px;
+  font-size: 17px;
+  margin: 5vh auto;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 1.5px 4px 5px #979797;
+}/*# sourceMappingURL=transdisciplinaritate.css.map */

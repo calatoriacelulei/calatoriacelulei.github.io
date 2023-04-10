@@ -1,0 +1,284 @@
+.text {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 3vh;
+  color: rgb(106, 162, 209);
+}
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+}
+
+.subtext {
+  text-align: center;
+  font-size: 17.5px;
+  font-weight: 700;
+  margin: 3vh;
+  color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 1024px) {
+  .subtext {
+    font-size: 12.5px;
+  }
+}
+
+.muscles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+  background-color: rgba(208, 214, 181, 0.2784313725);
+}
+@media only screen and (max-width: 1024px) {
+  .muscles {
+    display: initial;
+    height: 75vh;
+    background-color: transparent;
+  }
+}
+.muscles > .m1 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-right: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .muscles > .m1 {
+    width: 50vh;
+    margin-right: 0;
+  }
+}
+.muscles > p {
+  max-width: 450px;
+  line-height: 27.5px;
+}
+@media only screen and (max-width: 1024px) {
+  .muscles > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+.skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  .skeleton {
+    display: initial;
+    background-color: transparent;
+  }
+}
+.skeleton > .n2 {
+  width: 75vh;
+  border-radius: 10px;
+  margin: auto;
+  justify-content: center;
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .skeleton > .n2 {
+    width: 50vh;
+    margin-right: 0;
+    display: initial;
+  }
+}
+.skeleton > .m2 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-left: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .skeleton > .m2 {
+    width: 50vh;
+    margin-right: 0;
+    display: none;
+  }
+}
+.skeleton > p {
+  line-height: 27.5px;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  .skeleton > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+.brain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+  background-color: rgba(208, 214, 181, 0.2784313725);
+}
+@media only screen and (max-width: 1024px) {
+  .brain {
+    display: initial;
+    background-color: transparent;
+  }
+}
+.brain > .m3 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-right: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .brain > .m3 {
+    width: 50vh;
+    margin-right: 0;
+  }
+}
+.brain > p {
+  line-height: 27.5px;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  .brain > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+.sanguine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  .sanguine {
+    display: initial;
+    background-color: transparent;
+  }
+}
+.sanguine > .n4 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-left: 3vh;
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .sanguine > .n4 {
+    width: 50vh;
+    margin-left: 0;
+    display: initial;
+  }
+}
+.sanguine > .m4 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-left: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .sanguine > .m4 {
+    display: none;
+  }
+}
+.sanguine > p {
+  line-height: 27.5px;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  .sanguine > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+.lungs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+  background-color: rgba(208, 214, 181, 0.2784313725);
+}
+@media only screen and (max-width: 1024px) {
+  .lungs {
+    display: initial;
+    background-color: transparent;
+  }
+}
+.lungs > .m5 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-right: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .lungs > .m5 {
+    width: 50vh;
+    margin-right: 0;
+  }
+}
+.lungs > p {
+  line-height: 27.5px;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  .lungs > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2vh 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  .heart {
+    display: initial;
+    background-color: transparent;
+  }
+}
+.heart > .n6 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-left: 3vh;
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .heart > .n6 {
+    width: 50vh;
+    margin-left: 0;
+    display: initial;
+  }
+}
+.heart > .m6 {
+  width: 75vh;
+  border-radius: 10px;
+  margin-left: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .heart > .m6 {
+    display: none;
+  }
+}
+.heart > p {
+  line-height: 27.5px;
+  max-width: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  .heart > p {
+    padding: 3vh 4vh;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=miez.css.map */

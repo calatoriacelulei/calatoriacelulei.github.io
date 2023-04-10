@@ -1,0 +1,21 @@
+.text{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 3vh;
+    color: rgb(106, 162, 209);
+    @media only screen and (max-width: 1024px) {
+        font-size: 25px;
+    }
+}
+
+.vd {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    >iframe{
+        width: 100vh;
+        height: 56.5vh;
+    }
+}

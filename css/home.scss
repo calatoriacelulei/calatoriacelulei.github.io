@@ -1,0 +1,204 @@
+@import "./colors.scss";
+@import "./reset.scss";
+
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  overflow-y: scroll;
+}
+
+.bgmain {
+  position: relative;
+  overflow: hidden;
+
+  > img:first-of-type {
+    position: absolute;
+    height: 100%;
+
+    @media only screen and (max-width: 1024px) {
+      position: absolute;
+      left: -20%;
+      height: 100%;
+    }
+  }
+
+  > img:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 70%;
+
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  > div {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 60px 0 90px;
+    height: 60vh;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 50px 20px 30px;
+      background-color: rgba(255, 255, 255, 0.724);
+    }
+
+    > h1 {
+      font-size: 64px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 5%;
+      @media only screen and (max-width: 1024px) {
+        font-size: 36px;
+      }
+    }
+
+    > a {
+      text-decoration: none;
+      color: white;
+      background-color: $fountain-blue;
+      font-size: 21px;
+      padding: 10px 30px;
+      border-radius: 30px;
+      margin-top: 30px;
+      font-weight: 400;
+      box-shadow: #489fb54b 0px 1.4vh 2.8vh, #489fb517 0px 1vh 1vh;
+      text-align: center;
+
+      &:hover {
+        background-color: $fountain-blue-2;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        margin-top: 50px;
+        width: 45%;
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  padding: 30px 60px;
+  background-color: rgba(128, 128, 128, 0.124);
+  margin: 0 0;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+  }
+
+  > div {
+    display: flex;
+    flex: 1;
+    margin-right: 60px;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    > div {
+      flex: 1;
+      background-color: rgba(128, 128, 128, 0.124);
+      margin-right: 30px;
+      border-radius: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-decoration: none;
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        margin-right: 0;
+        border-radius: 8px;
+        margin-top: 30px;
+        padding: 30px 0 0;
+      }
+
+      > img {
+        width: 70%;
+        height: 120px;
+        object-fit: contain;
+        padding: 1vh 1vh;
+      }
+
+      > p,
+      a {
+        color: rgba(128, 128, 128, 0.6);
+        font-size: 19px;
+        margin-top: 10px;
+
+        > span {
+          color: black;
+        }
+      }
+
+      > a {
+        color: black;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      > button {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        background-color: rgba(0, 0, 0, 0.787);
+        outline: none;
+        border: 0;
+        width: 45px;
+        height: 45px;
+        border-radius: 16px;
+        cursor: pointer;
+
+        @media only screen and (max-width: 1024px) {
+          position: relative;
+          width: 100%;
+          right: 0;
+          bottom: 0;
+          border-radius: 0;
+          margin-top: 20px;
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        > img {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  > h3 {
+    line-height: 1.3;
+    font-size: 60px;
+    font-weight: 100;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 32px;
+      text-align: center;
+
+      > br {
+        display: none;
+      }
+    }
+  }
+}

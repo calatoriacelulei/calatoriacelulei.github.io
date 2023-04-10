@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.part1 {
+  margin: 5vh auto;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 {
+    position: relative;
+  }
+}
+.part1 div {
+  display: inline-flex;
+}
+.part1 div > .text {
+  max-width: 450px;
+  justify-content: center;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 div {
+    display: initial;
+  }
+}
+.part1 img {
+  width: 65vh;
+  border-radius: 1.5vh;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 img {
+    width: 85%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: block;
+  }
+}
+.part1 p {
+  margin-top: 2vh;
+  text-align: justify;
+  margin-left: 3vh;
+  line-height: normal;
+  max-width: 950px;
+  justify-content: center;
+  display: flex;
+  margin: 2vh auto;
+  line-height: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 p {
+    font-size: 2vh;
+    padding: 2vh;
+    margin: 2vh 3vh;
+  }
+}
+
+.text2 > .h1 {
+  color: #0086A5;
+}
+
+.groupfoto > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .groupfoto > img {
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
+  }
+}
+
+.content-card {
+  margin: 5vh 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1024px) {
+  .content-card .content-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.content-card > .card {
+  width: 430px;
+  height: auto;
+  border-radius: 30px;
+  background: rgba(224, 224, 224, 0.568627451);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(106, 163, 209, 0.26);
+  margin: 3vh 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .content-card > .card {
+    display: initial;
+    width: 330px;
+    height: auto;
+  }
+}
+
+.content-card > .card > img {
+  border-radius: 50%;
+  align-items: left;
+  width: 50%;
+  height: 70%;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .content-card > .card > img {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 4vh;
+  }
+}
+
+.content-card > .card > p {
+  align-items: right;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 1024px) {
+  .content-card > .card > p {
+    padding: 0 2vh;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 57px;
+  margin: 20px 0;
+  color: rgb(106, 162, 209);
+}
+@media only screen and (max-width: 1024px) {
+  .h1 {
+    font-size: 40px;
+  }
+}
+
+.text > p {
+  text-align: center;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .text > p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

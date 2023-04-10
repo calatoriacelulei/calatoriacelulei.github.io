@@ -1,0 +1,250 @@
+.text {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 3vh;
+    color: rgb(106, 162, 209);
+    @media only screen and (max-width: 1024px) {
+        font-size: 25px;
+    }
+}
+
+.subtext {
+    text-align: center;
+    font-size: 17.5px;
+    font-weight: 700;
+    margin: 3vh;
+    color: rgb(0, 0, 0);
+    @media only screen and (max-width: 1024px) {
+        font-size: 12.5px;
+    }
+}
+
+.muscles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    background-color: #d0d6b547;
+
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        height: 75vh;
+        background-color: transparent;
+    }
+    > .m1 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-right: 3vh;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-right: 0;
+        }
+    }
+    > p {
+        max-width: 450px;
+        line-height: 27.5px;
+    @media only screen and (max-width: 1024px) {
+        padding: 3vh 4vh;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }}
+}
+
+.skeleton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        background-color: transparent;
+
+    }
+    >.n2{
+        width: 75vh;
+        border-radius: 10px;
+        margin: auto;
+        justify-content: center;
+        display: none;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-right: 0;
+            display: initial;
+        }
+    }
+    > .m2 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-left: 3vh;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-right: 0;
+            display: none;
+
+        }
+    }
+    > p {
+        line-height: 27.5px;
+        max-width: 450px;
+        @media only screen and (max-width: 1024px) {
+            padding: 3vh 4vh;
+            font-size: 14px;
+        margin-bottom: 50px;
+
+        }
+    }
+}
+
+.brain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    background-color: #d0d6b547;
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        background-color: transparent;
+
+    }
+    > .m3 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-right: 3vh;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-right: 0;
+
+        }
+    }
+    > p {
+        line-height: 27.5px;
+        max-width: 450px;
+        @media only screen and (max-width: 1024px) {
+            padding: 3vh 4vh;
+            font-size: 14px;
+        margin-bottom: 50px;
+
+        }
+    }
+}
+
+.sanguine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        background-color: transparent;
+
+    }   
+    > .n4 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-left: 3vh;
+        display: none;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-left: 0;
+            display: initial;
+        }
+    }
+    > .m4 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-left: 3vh;
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    > p {
+        line-height: 27.5px;
+        max-width: 450px;
+        @media only screen and (max-width: 1024px) {
+            padding: 3vh 4vh;
+            font-size: 14px;
+        margin-bottom: 50px;
+
+        }
+    }
+}
+
+.lungs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    background-color: #d0d6b547;
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        background-color: transparent;
+    }
+   
+    > .m5 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-right: 3vh;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-right: 0;
+        }
+    }
+    > p {
+        line-height: 27.5px;
+        max-width: 450px;
+        @media only screen and (max-width: 1024px) {
+            padding: 3vh 4vh;
+            font-size: 14px;
+        margin-bottom: 50px;
+
+        }
+    }
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2vh 2vh;
+    @media only screen and (max-width: 1024px) {
+        display: initial;
+        background-color: transparent;
+
+    }
+    > .n6 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-left: 3vh;
+        display: none;
+        @media only screen and (max-width: 1024px) {
+            width: 50vh;
+            margin-left: 0;
+            display: initial;
+        }
+    }
+    > .m6 {
+        width: 75vh;
+        border-radius: 10px;
+        margin-left: 3vh;
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+    }
+    > p {
+        line-height: 27.5px;
+        max-width: 450px;
+        @media only screen and (max-width: 1024px) {
+            padding: 3vh 4vh;
+            font-size: 14px;
+        margin-bottom: 50px;
+
+        }
+    }
+}

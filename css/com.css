@@ -1,0 +1,31 @@
+.text {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 3vh;
+  color: rgb(106, 162, 209);
+}
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+}
+
+.f1 {
+  background-color: rgba(208, 214, 181, 0.4039215686);
+  height: 60px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 5vh 7vh;
+}
+.f1 .r1 {
+  width: 50%;
+}
+.f1 .r2 {
+  width: 50%;
+}
+
+h1 {
+  font-size: 25px;
+}/*# sourceMappingURL=com.css.map */

@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.cart {
+  flex: 1;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart {
+    flex-wrap: wrap;
+    margin-top: 5vh;
+  }
+}
+.cart > table > thead {
+  border-bottom: 1px solid black;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > thead {
+    display: none;
+  }
+}
+.cart > table > thead > tr > th {
+  padding-bottom: 2vh;
+}
+.cart > table > thead > tr > th:nth-child(4) {
+  padding-left: 4vh;
+}
+.cart > table > tbody > tr {
+  height: 30vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    height: initial;
+    border-top: 1px solid;
+  }
+}
+.cart > table > tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td:nth-child(3) {
+    padding: 0 5vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td {
+    float: left;
+    display: table-cell;
+  }
+}
+.cart > table > tbody > tr > td > .cross {
+  background-color: transparent;
+  border: none;
+  width: 2.5vh;
+  cursor: pointer;
+  padding: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .cross {
+    width: 2vh;
+    margin-top: 2vh;
+    padding: 1vh;
+  }
+}
+.cart > table > tbody > tr > td > .photo {
+  max-width: 150px;
+  padding: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .photo {
+    max-width: 100px;
+    padding: 2vh 0.2vh;
+  }
+}
+.cart > table > tbody > tr > td > .product_name {
+  padding: 0 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .product_name {
+    font-size: 14px;
+    margin-top: 2vh;
+    max-width: 20vh;
+    padding: 0 0;
+    margin-left: 3.9vh;
+    margin-right: 3.9vh;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .cart > table > tbody > tr > td > .product_name {
+    max-width: 17vh;
+    padding: 0 0;
+    font-size: 12.5px;
+  }
+}
+.cart > table > tbody > tr > td > .product_name > a {
+  color: black;
+}
+.cart > table > tbody > tr > td > .product_type {
+  font-size: 12.5px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .product_type {
+    font-size: 11px;
+  }
+}
+.cart > table > tbody > tr > td > .product_price {
+  padding: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .product_price {
+    padding: 2.5vh;
+    font-size: 12.5px;
+    margin-top: 1.5vh;
+  }
+}
+.cart > table > tbody > tr > td > .product_price_final {
+  padding: 2vh 0;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .product_price_final {
+    max-width: 250%;
+    padding: 2vh 2vh;
+  }
+}
+.cart > table > tbody > tr > td > .product_price_final > .sub {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .product_price_final > .sub {
+    display: initial;
+  }
+}
+.cart > table > tbody > tr > td > .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: bottom;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .counter {
+    padding: 1vh 0;
+  }
+}
+.cart > table > tbody > tr > td > .counter > .minus {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+  margin: 2vh;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .counter > .minus {
+    width: 27.5px;
+    height: 27.5px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .cart > table > tbody > tr > td > .counter > .minus {
+    width: 22.5px;
+    height: 22.5px;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .cart > table > tbody > tr > td > .counter > .minus {
+    width: 20px;
+    height: 20px;
+  }
+}
+.cart > table > tbody > tr > td > .counter > .number {
+  font-size: 25px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .counter > .number {
+    font-size: 15px;
+  }
+}
+.cart > table > tbody > tr > td > .counter > .plus {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px rgb(206, 206, 206);
+  margin: 2vh;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tbody > tr > td > .counter > .plus {
+    width: 27.5px;
+    height: 27.5px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .cart > table > tbody > tr > td > .counter > .plus {
+    width: 22.5px;
+    height: 22.5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cart > table > tfoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.cart > table > tfoot > tr > td > .total {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 1vh 1vh;
+}
+.cart > table > tfoot > tr > td > table > tbody > tr > td {
+  padding: 2.5vh 2.5vh;
+  font-size: 12.5px;
+}
+.cart > table > tfoot > tr > td > table > tbody > tr > td > .bold {
+  font-weight: 700;
+}
+.cart > table > tfoot > tr > td > table > tbody > tr > td > .btn {
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1.5vh 4vh;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.cart > table > tfoot > tr > td > table > tbody > .box1 {
+  background-color: rgb(239, 239, 239);
+}
+.cart > table > tfoot > tr > td > table > tbody > .box2 {
+  background-color: rgb(226, 226, 226);
+}
+.cart > table > tfoot > tr > td > table > tbody > .box3 {
+  background-color: rgb(239, 239, 239);
+  font-weight: 700;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  padding: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  footer {
+    position: relative;
+    padding: 0;
+  }
+}/*# sourceMappingURL=cart.css.map */
