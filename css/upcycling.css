@@ -1,0 +1,81 @@
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+.text {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 3vh;
+  color: rgb(106, 162, 209);
+}
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+}
+
+.d1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .d1 {
+    display: initial;
+  }
+}
+.d1 > .p1 {
+  padding: 3vh 3vh;
+  max-width: 550px;
+}
+.d1 > .i1 {
+  width: 75vh;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .d1 > .i1 {
+    width: 40vh;
+    margin-left: 3vh;
+  }
+}
+
+.p2 {
+  padding: 5vh 0;
+  text-align: center;
+  max-width: 950px;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .p2 {
+    text-align: justify;
+    padding: 5vh 3vh;
+  }
+}
+
+.d2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 0;
+}
+@media only screen and (max-width: 1024px) {
+  .d2 {
+    display: initial;
+  }
+}
+.d2 > .p3 {
+  padding: 3vh 3vh;
+  max-width: 550px;
+}
+.d2 > .i2 {
+  width: 75vh;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .d2 > .i2 {
+    width: 40vh;
+    margin-left: 3vh;
+  }
+}/*# sourceMappingURL=upcycling.css.map */
