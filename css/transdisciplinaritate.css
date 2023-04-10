@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
 .text {
   text-align: center;
   font-size: 45px;
@@ -37,7 +42,7 @@
     width: 70vw;
     justify-content: center;
     margin: 2vh auto;
-    height: 42.5vh;
+    height: 35vh;
   }
 }
 .box > img {
