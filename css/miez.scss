@@ -1,3 +1,8 @@
+body{
+    overflow-x: hidden;
+    touch-action: pan-y;
+}
+
 .text {
     text-align: center;
     font-size: 45px;
@@ -38,7 +43,7 @@
         border-radius: 10px;
         margin-right: 3vh;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
+            width: 42.5vh;
             margin-right: 0;
         }
     }
@@ -70,8 +75,8 @@
         justify-content: center;
         display: none;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-right: 0;
+            width: 42.5vh;
+            margin-left: -20px;
             display: initial;
         }
     }
@@ -80,8 +85,8 @@
         border-radius: 10px;
         margin-left: 3vh;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-right: 0;
+            width: 42.5vh;
+            margin-left: -20px;
             display: none;
 
         }
@@ -115,8 +120,8 @@
         border-radius: 10px;
         margin-right: 3vh;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-right: 0;
+            width: 42.5vh;
+            margin-left: -20px;
 
         }
     }
@@ -149,8 +154,8 @@
         margin-left: 3vh;
         display: none;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-left: 0;
+            width: 42.5vh;
+            margin-left: -20px;
             display: initial;
         }
     }
@@ -191,8 +196,8 @@
         border-radius: 10px;
         margin-right: 3vh;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-right: 0;
+            width: 42.5vh;
+            margin-left: -20px;
         }
     }
     > p {
@@ -224,8 +229,8 @@
         margin-left: 3vh;
         display: none;
         @media only screen and (max-width: 1024px) {
-            width: 50vh;
-            margin-left: 0;
+            width: 42.5vh;
+            margin-left: -20px;
             display: initial;
         }
     }
