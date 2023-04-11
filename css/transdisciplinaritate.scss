@@ -25,7 +25,7 @@ body{
 
 .box {
     width: 47vh;
-    height: 45vh;
+    height: 46.5v;
     margin: 2vh 3vh;
     border-radius: 10px;
     border: 0.5px solid rgba(194, 194, 194, 0.536);
@@ -33,7 +33,7 @@ body{
     overflow: hidden;
     transition: transform .5s ease 0s;
     @media only screen and (max-width: 1024px) {
-        width: 70vw;
+        width: 72vw;
         justify-content: center;
         margin: 2vh auto;
         height: 35vh;
