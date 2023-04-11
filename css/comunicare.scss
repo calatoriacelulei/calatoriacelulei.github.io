@@ -76,9 +76,12 @@ body{
         }
 
         > .ugh1 {
-          margin-top: 36px;
+          margin-left: 5vh;
           @media only screen and (max-width: 1024px) {
             max-width: 100%;
+            margin-left: 0;
+            margin-bottom: 2vh;
+            margin-top: 5vh;
           }
         }
 
@@ -102,6 +105,8 @@ body{
           margin: 20px 25px 0;
           @media only screen and (max-width: 1024px) {
             margin: 0;
+            margin-bottom: 2vh;
+
           }
         }
 
@@ -134,7 +139,7 @@ body{
   justify-content: center;
 
   p {
-    height: 64vh;
+    height: auto;
     width: 40%;
     text-align: center;
     line-height: 2;
@@ -172,7 +177,7 @@ body{
     img {
       width: 98vh;
       @media only screen and (max-width: 1024px) {
-        width: 40vh;
+        width: 50vh;
       }
     }
   }
