@@ -1,0 +1,38 @@
+.tb {
+  width: 50%;
+  margin: auto;
+  border: black 2px solid;
+  text-align: center;
+  line-height: 25px;
+}
+
+table, th, td, tr {
+  border: black 2px solid;
+}
+
+.bgmain {
+  position: relative;
+  overflow: hidden;
+}
+.bgmain > img:first-of-type {
+  position: absolute;
+  height: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .bgmain > img:first-of-type {
+    position: absolute;
+    left: -20%;
+    height: 100%;
+  }
+}
+.bgmain > img:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 70%;
+}
+@media only screen and (max-width: 1024px) {
+  .bgmain > img:last-of-type {
+    display: none;
+  }
+}/*# sourceMappingURL=transparenta.css.map */

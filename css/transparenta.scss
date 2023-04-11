@@ -1,0 +1,39 @@
+.tb {
+    width: 50%;
+    margin: auto;
+    border: black 2px solid;
+    text-align: center;
+    line-height: 25px;
+}
+
+table, th, td, tr{
+    border: black 2px solid;
+
+}
+
+.bgmain {
+    position: relative;
+    overflow: hidden;
+  
+    > img:first-of-type {
+      position: absolute;
+      height: 100%;
+  
+      @media only screen and (max-width: 1024px) {
+        position: absolute;
+        left: -20%;
+        height: 100%;
+      }
+    }
+  
+    > img:last-of-type {
+      position: absolute;
+      right: 0;
+      top: 10%;
+      height: 70%;
+  
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+}  
