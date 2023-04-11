@@ -17,154 +17,116 @@
 </head>
 
 <body>
-    <footer>
+    <div class="header" id="header">
+        <div>
+            <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+            <p class="liceul">Liceul Teoretic <br> Petre Ștefănucă</p>
+        </div>
 
-        <div class="header" id="header">
+        <div id="fullmenu">
+
             <div>
-                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
-                <p class="liceul">Liceul Teoretic <br> Petre Ștefănucă</p>
+                <a href="index.html">Acasă</a>
+                <a href="aboutus.html">Despre Noi</a>
+                <a href="transdisciplinaritate.html">Transdisciplinaritate</a>
+                <a href="transparenta.html">Transparență</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contacts.html">Contacte</a>
             </div>
+        </div>
 
-            <div id="fullmenu">
+        <div onclick="openMenu()" class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
+    </div>
 
-                <div>
-                    <a href="index.html">Acasă</a>
-                    <a href="aboutus.html">Despre Noi</a>
-                    <a href="transdisciplinaritate.html">Transdisciplinaritate</a>
-                    <a href="transparenta.html">Transparență</a>
-                    <a href="galerie.html">Galerie</a>
-                    <a href="contacts.html">Contacte</a>
-                </div>
-            </div>
+    <div class="img-slider">
 
-            <div onclick="openMenu()" class="burger" id="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
+
+        <div class="slide">
+            <img src="./image/g2.jpg" alt="">
         </div>
 
 
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 13</div>
-                <img src="./image/g5.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 13</div>
-                <img src="./image/g2.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 13</div>
-                <img src="./image/g3.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 13</div>
-                <img src="./image/g4.jpg" style="width:100%">
-
-            </div>
-
-
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 13</div>
-                <img src="./image/g6.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 13</div>
-                <img src="./image/g7.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">7 / 13</div>
-                <img src="./image/g1.jpg" style="width:100%">
-
-            </div>
-
-
-            <div class="mySlides fade">
-                <div class="numbertext">8 / 13</div>
-                <img src="./image/g8.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">9 / 13</div>
-                <img src="./image/g9.jpg" style="width:100%">
-
-            </div>
-
-
-            <div class="mySlides fade">
-                <div class="numbertext">10 / 13</div>
-                <img src="./image/g10.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">11 / 13</div>
-                <img src="./image/g11.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">12 / 13</div>
-                <img src="./image/g13.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">13 / 13</div>
-                <img src="./image/g12.jpg" style="width:100%">
-
-            </div>
-
-
-
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-            <span class="dot" onclick="currentSlide(11)"></span>
-            <span class="dot" onclick="currentSlide(12)"></span>
-            <span class="dot" onclick="currentSlide(13)"></span>
+        <div class="slide">
+            <img src="./image/g3.jpg" alt="">
         </div>
 
 
+        <div class="slide">
+            <img src="./image/g4.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g5.jpg" alt="">
+        </div>
+
+
+
+        <div class="slide">
+            <img src="./image/g6.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g7.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g8.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g9.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g10.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g11.jpg" alt="">
+        </div>
+
+
+        <div class="slide">
+            <img src="./image/g12.jpg" alt="">
+        </div>
+
+
+
+        <div class="slide">
+            <img src="./image/g13.jpg" alt="">
+        </div>
+
+
+        <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
        
+        </div>
+    </div>
+    </div>
 
-
-
-
-
-
+    <footer>
         <div class="container">
 
             <div class="logo">
@@ -197,6 +159,66 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        // Javascript for image slider manual navigation
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        // Javascript for image slider autoplay navigation
+        var repeat = function (activeClass) {
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function () {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active');
+                    });
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if (slides.length == i) {
+                        i = 0;
+                    }
+                    if (i >= slides.length) {
+                        return;
+                    }
+                    repeater();
+                }, 10000);
+            }
+            repeater();
+        }
+        repeat();
+    </script>
+
+
+
 </body>
 
 </html>
