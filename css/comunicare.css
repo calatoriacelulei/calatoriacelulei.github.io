@@ -1,14 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 .part1 {
   display: inline-flex;
   flex-direction: row;
   height: auto;
-  background-color: #E2EFDE;
+  background-color: #e2efde;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 {
+    display: initial;
+  }
 }
 .part1 .first {
   width: 50%;
@@ -16,23 +25,48 @@
   padding: 20vh 3vh;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 .first {
+    padding: 0;
+    width: 100%;
+  }
+}
 .part1 .first .content {
-  height: 30vh;
+  height: auto;
   margin: 10px 10vh;
   display: flex;
   flex-direction: row;
   gap: 5vh;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content {
+    margin: 20px 7.5vh;
+    flex-direction: column;
+  }
 }
 .part1 .first .content h1 {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin: 30px 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content h1 {
+    margin: 0;
+  }
 }
 .part1 .first .content ul {
   justify-self: center;
   list-style-type: none;
   margin: 30px;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content ul {
+    margin: 0;
+  }
 }
 .part1 .first .content li {
   text-decoration: none;
@@ -42,29 +76,66 @@
 .part1 .first .content .r1 {
   justify-content: center;
   width: 50%;
-  background-color: rgba(11, 60, 73, 0.6392156863);
-  color: white;
+  color: #00678e;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r1 {
+    width: 100%;
+  }
 }
 .part1 .first .content .r1 > .ugh1 {
-  margin-top: 36px;
+  margin-left: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r1 > .ugh1 {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+  }
 }
 .part1 .first .content .r1 > .ugh {
   margin-top: 35px;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r1 > .ugh {
+    margin: 0;
+  }
+}
 .part1 .first .content .r2 {
   justify-content: center;
   width: 50%;
-  background-color: rgba(11, 60, 73, 0.6392156863);
-  color: white;
+  color: #00678e;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r2 {
+    width: 100%;
+  }
 }
 .part1 .first .content .r2 > .ugh2 {
   margin: 20px 25px 0;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r2 > .ugh2 {
+    margin: 0;
+    margin-bottom: 2vh;
+  }
+}
 .part1 .first .content .r2 > .ugh3 {
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 1024px) {
+  .part1 .first .content .r2 > .ugh3 {
+    margin: 0;
+  }
+}
 .part1 .second {
   width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .part1 .second {
+    width: auto;
+  }
 }
 .part1 .second img {
   width: 90%;
@@ -77,15 +148,20 @@
   justify-content: center;
 }
 .part2 p {
-  height: 64vh;
-  width: 60%;
+  height: auto;
+  width: 40%;
   text-align: center;
   line-height: 2;
   font-size: 18px;
   margin: auto;
   padding: 4vh;
-  background-color: rgba(11, 60, 73, 0.7333333333);
-  color: white;
+  color: #00678e;
+}
+@media only screen and (max-width: 1024px) {
+  .part2 p {
+    height: auto;
+    width: 80%;
+  }
 }
 
 .part3 {
@@ -98,16 +174,36 @@
   justify-content: center;
   border-bottom: 2px solid rgba(11, 60, 73, 0.7333333333);
 }
+@media only screen and (max-width: 1024px) {
+  .part3 {
+    flex-direction: column;
+  }
+}
 .part3 > .img2 {
   width: 50%;
   margin: 8vh 0 8vh 5vh;
 }
+@media only screen and (max-width: 1024px) {
+  .part3 > .img2 {
+    margin: 2vh 3vh;
+  }
+}
 .part3 > .img2 img {
   width: 98vh;
+}
+@media only screen and (max-width: 1024px) {
+  .part3 > .img2 img {
+    width: 50vh;
+  }
 }
 .part3 .slide4 {
   height: 64vh;
   padding-right: 3vh;
+}
+@media only screen and (max-width: 1024px) {
+  .part3 .slide4 {
+    height: auto;
+  }
 }
 .part3 .slide4 p {
   width: 90%;
@@ -115,7 +211,6 @@
   line-height: 2;
   font-size: 18px;
   margin: 30px;
-  background-color: rgba(11, 60, 73, 0.4392156863);
-  color: white;
+  color: #00678e;
   padding: 10px;
 }/*# sourceMappingURL=comunicare.css.map */
