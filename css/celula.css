@@ -32,4 +32,9 @@ iframe {
   .t1 {
     margin: 5vh 4vh;
   }
+}
+
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
 }/*# sourceMappingURL=celula.css.map */
