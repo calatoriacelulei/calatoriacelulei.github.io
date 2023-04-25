@@ -145,11 +145,11 @@ body {
 
 .part2 {
   padding: 6vh 0;
-  justify-content: justify;
+  justify-content: center;
 }
 .part2 p {
   height: auto;
-  width: 60%;
+  width: 40%;
   text-align: center;
   line-height: 2;
   font-size: 18px;
