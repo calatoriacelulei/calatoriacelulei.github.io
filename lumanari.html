@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/lumanari.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/galerie.css">
     <script src="./js/header.js"></script>
     <script src="./js/products.js"></script>
+    <script src="./js/slide.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -50,13 +52,169 @@
         <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
     </div>
 
-    <div class="part1">
-        Celula macroscopică în ochii elevilor cu CES de la Unitatea de Educație Incluzivă a LT „Petre Ștefănucă”
-        Elevii atipici cu dizabilități severe din instituția noastră au trăit o experientă frumoasă. Ei au modelat
-        lumânare-celule-ou din ceară fiind ghidați de cadrele didactice de sprijin, elevi voluntari și mentorii:
-        Grigoriță Mariana, psiholog școlar, Cricerescu Ariadna, asistent personal și Rudoi Silvia-șef adjunct pentru
-        educație inclizivă. Elevii dobândesc deprinderi și abilități practice pentru insecția lor socială. Lumânârile-
-        ou au fost comercializare.
+
+    <div class="text2">
+        <h1 class="h1">Celula macroscopică în ochii elevilor cu CES de la Unitatea de Educație Incluzivă a LT „Petre
+            Ștefănucă”</h1>
 
     </div>
-    <div class="part2"></div>
+    <div class="part1">
+        Elevii atipici cu dizabilități severe din instituția noastră au trăit o experientă frumoasă. În cardul
+        MasterClass-urilor „Confecționarea lumânărilor din ceară parfumată” copii au modelat lumânare-celule-ou. Ei au
+        fost ghidați de cadrele didactice de sprijin, elevi voluntari și mertori Grigoriță Mariana, psiholog școlar,
+        Cricerescu Ariadna, Cociug Angelina asistent personal și Rudoi Silvia- șef adjunct pentru educație incluzivă.
+        Elevii conștientizează ce este celula și care este rolul ei în structura organismelor vii și de ce familia este
+        numită „Celula societății”. Dobândesc deprinderi și abilități practice pentru insecția lor socială și pentru
+        viața independentă. În perioada sărbătorilor pascale „Lumânârile-ou” au fost prezentate și comercializate în
+        incinta Parlamentului Republicii Moldova în cadrul expoziției cu genericul „Frumosul în ochii copiilor”.
+    </div>
+    <div class="part2">
+        <div class="img-slider">
+
+
+            <div class="slide">
+                <img src="./image/f1.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f2.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f3.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f4.jpg" alt="">
+            </div>
+
+
+
+            <div class="slide">
+                <img src="./image/f5.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f6.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f8.jpg" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="./image/f7.jpg" alt="">
+            </div>
+
+
+
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="r1">
+                <h6>pagini</h6>
+                <ul>
+                    <li><a href="#">Acasa</a></li>
+                    <li><a href="#">Despre Noi</a></li>
+                    <li><a href="#">Transdisciplinaritate</a></li>
+                    <li><a href="#">Transparență</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Contacte</a></li>
+                </ul>
+            </div>
+
+            <div class="r2">
+                <h6>contactează-ne</h6>
+                <ul class="cont">
+                    <li> <a href="tel:026822437" target="_blank">026822437</a></li>
+                    <li> <a href="mailto:ipltpetrestefanuca@gmail.com" target="_blank">ipltpetrestefanuca@gmail.com</a>
+                    </li>
+                    <li><a href="ltpetrestefanuca.md">ltpetrestefanuca.md</a></li>
+                    <li>Strada Basarabia 2, Ialoveni</li>
+                    <li class="icon"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        // Javascript for image slider manual navigation
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        // Javascript for image slider autoplay navigation
+        var repeat = function (activeClass) {
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function () {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active');
+                    });
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if (slides.length == i) {
+                        i = 0;
+                    }
+                    if (i >= slides.length) {
+                        return;
+                    }
+                    repeater();
+                }, 999);
+            }
+            repeater();
+        }
+        repeat();
+    </script>

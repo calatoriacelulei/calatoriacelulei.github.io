@@ -1,8 +1,22 @@
+.part2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: 0 10vh 10vh 40vh;
+  width: 60%;
+}
+
 .part1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  width: auto;
+  margin: 5vh 30vh 0 30vh;
+  line-height: 25px;
+}
+
+.text2 > .h1 {
+  color: #0086A5;
+  font-size: 45px;
   text-align: center;
-  margin: 10vh;
-  width: 50%;
+  margin: 4vh;
 }/*# sourceMappingURL=lumanari.css.map */

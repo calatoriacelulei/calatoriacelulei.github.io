@@ -12,10 +12,12 @@
     <title>Calatoria Celulei</title>
     <link rel="icon" href="image/logo.png">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/pov.css">
+    <link rel="stylesheet" href="./css/virts.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/galerie.css">
     <script src="./js/header.js"></script>
     <script src="./js/products.js"></script>
+    <script src="./js/slide.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -49,3 +51,111 @@
         </div>
         <div onclick="closeMenu()" class="close-btn" id="close-btn">&#x2715;</div>
     </div>
+
+    <img src="./image/covervirt.png" alt="">
+
+    <div class="row">
+        <img class="img5"src="./image/c1jpg.jpg" alt="" width="540px" height="450px">
+        <img src="./image/c2.jpg" alt="" width="540px" height="450px">
+    </div>
+
+    <div class="row">
+        <img class="img5" src="./image/c3.jpg" alt="" width="540px" height="450px">
+        <img src="./image/c5.jpg" width="540px" height="450px" alt="">
+    </div>
+
+    <div class="row">
+        <img class="img5" src="./image/c6.jpg" width="540px" height="450px" alt="">
+        <img src="./image/c7.jpg" width="540px" height="450px" alt="">
+    </div>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="r1">
+                <h6>pagini</h6>
+                <ul>
+                    <li><a href="#">Acasa</a></li>
+                    <li><a href="#">Despre Noi</a></li>
+                    <li><a href="#">Transdisciplinaritate</a></li>
+                    <li><a href="#">Transparență</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Contacte</a></li>
+                </ul>
+            </div>
+
+            <div class="r2">
+                <h6>contactează-ne</h6>
+                <ul class="cont">
+                    <li> <a href="tel:026822437" target="_blank">026822437</a></li>
+                    <li> <a href="mailto:ipltpetrestefanuca@gmail.com" target="_blank">ipltpetrestefanuca@gmail.com</a>
+                    </li>
+                    <li><a href="ltpetrestefanuca.md">ltpetrestefanuca.md</a></li>
+                    <li>Strada Basarabia 2, Ialoveni</li>
+                    <li class="icon"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        // Javascript for image slider manual navigation
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        // Javascript for image slider autoplay navigation
+        var repeat = function (activeClass) {
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function () {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active');
+                    });
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if (slides.length == i) {
+                        i = 0;
+                    }
+                    if (i >= slides.length) {
+                        return;
+                    }
+                    repeater();
+                }, 1000);
+            }
+            repeater();
+        }
+        repeat();
+    </script>

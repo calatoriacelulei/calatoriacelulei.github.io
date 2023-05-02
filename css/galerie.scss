@@ -24,7 +24,7 @@
 
 .img-slider .slide.active{
   clip-path: circle(150% at 0 50%);
-  transition: 0.4s;
+  transition: 0.5s;
   transition-property: clip-path;
 }
 
