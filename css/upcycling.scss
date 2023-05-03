@@ -7,7 +7,6 @@ body {
   text-align: center;
   font-size: 45px;
   font-weight: 700;
-  line-height: 25px;
   margin: 3vh;
   color: #0086a5;
   @media only screen and (max-width: 1024px) {
@@ -24,6 +23,7 @@ body {
   }
   > .p1 {
     padding: 3vh 3vh;
+    line-height: 25px;
     max-width: 550px;
   }
   > .i1 {
