@@ -7,63 +7,67 @@ body {
   text-align: center;
   font-size: 45px;
   font-weight: 700;
+  line-height: 25px;
   margin: 3vh;
-  color:#0086A5;
+  color: #0086a5;
   @media only screen and (max-width: 1024px) {
     font-size: 25px;
   }
 }
 
 .d1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media only screen and (max-width: 1024px) {
     display: initial;
-}
-  >.p1 {
+  }
+  > .p1 {
     padding: 3vh 3vh;
     max-width: 550px;
   }
-  >.i1{
+  > .i1 {
     width: 75vh;
     border-radius: 10px;
-  @media only screen and (max-width: 1024px) {
-    width: 40vh;
-    margin-left: 3vh; 
-}
+    @media only screen and (max-width: 1024px) {
+      width: 40vh;
+      margin-left: 3vh;
+    }
   }
 }
 
-.p2{
-    padding: 5vh 0;
-    text-align: center;
-    max-width: 950px;
-    margin: auto;
+.p2 {
+  padding: 5vh 0;
+  text-align: center;
+  max-width: 950px;
+  margin: auto;
+  line-height: 25px;
+
   @media only screen and (max-width: 1024px) {
     text-align: justify;
     padding: 5vh 3vh;
-}
+  }
 }
 
 .d2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4vh 0;
-    @media only screen and (max-width: 1024px) {
-        display: initial;
-    }
-  >.p3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 0;
+  @media only screen and (max-width: 1024px) {
+    display: initial;
+  }
+  > .p3 {
     padding: 3vh 3vh;
     max-width: 550px;
+    line-height: 25px;
   }
-  >.i2{
+  > .i2 {
     width: 75vh;
     border-radius: 10px;
     @media only screen and (max-width: 1024px) {
-        width: 40vh;
-        margin-left: 3vh; 
+      width: 40vh;
+      margin-left: 3vh;
     }
   }
 }
